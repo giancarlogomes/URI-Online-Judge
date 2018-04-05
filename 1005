@@ -1,0 +1,18 @@
+import java.io.IOException;
+    import java.util.Scanner;
+        import java.text.DecimalFormat;
+            public class Main {
+                public static void main(String[] args) throws IOException {
+                    Scanner input = new Scanner(System.in);
+                        DecimalFormat decimal = new DecimalFormat("0.00000");
+                
+                        double A, B, MEDIA;
+    
+                        A = input.nextDouble();
+                        B = input.nextDouble();
+    
+                        MEDIA = ((A/11 * 3.5) + (B/11 * 7.5));
+    
+                        System.out.printf("MEDIA = " + decimal.format(MEDIA) + "\n");
+                }
+            }
