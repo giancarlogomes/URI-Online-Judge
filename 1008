@@ -1,0 +1,22 @@
+import java.io.IOException;
+    import java.util.Scanner;
+        import java.text.DecimalFormat;
+            public class Main {
+                public static void main(String[] args) throws IOException {
+                    Scanner input = new Scanner(System.in);
+                        DecimalFormat decimal = new DecimalFormat("0.00");
+                        
+                        int numFunc, horasTrab;
+                        double valorHora, SALARY;
+                
+                        numFunc = input.nextInt();
+                        horasTrab = input.nextInt();
+                        valorHora = input.nextDouble();
+                
+                        SALARY = horasTrab * valorHora;
+                
+                        System.out.println("NUMBER = " + numFunc);
+                        System.out.println("SALARY = U$ " + decimal.format(SALARY));
+
+                }
+            }
